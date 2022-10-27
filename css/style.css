@@ -1,0 +1,124 @@
+/* .container {
+   width: 250px;
+   height: 250px;
+   border: 2px solid;
+   position: relative;
+}
+
+.second {
+   width: 100px;
+   height: 100px;
+   background-color: rgb(180, 248, 148);
+   position: absolute;
+   top: 0;
+   right: 10%;
+   z-index: 1;
+
+
+}
+
+.four {
+   width: 150px;
+   height: 150px;
+   background-color: rgb(245, 228, 75);
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.five {
+   width: 75px;
+   height: 75px;
+   background-color: rgb(255, 117, 225);
+   position: absolute;
+   top: 0;
+   right: 30%;
+   z-index: 2;
+} */
+
+
+/* Постарался сделать по красате и с практикой того что прохоодили */
+
+:root {
+   --width: 200px;
+   --height: 100px;
+   --color: white;
+   /* Извращения */
+}
+
+.container-hw {
+   border: solid 1px #9999;
+   width: 100%;
+   height: 100vh;
+   position: relative;
+}
+
+.block1,
+.block2,
+.block3,
+.block4,
+.block5,
+.block6 {
+   width: var(--width);
+   height: var(--height);
+   color: var(--color);
+   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   font-size: 30px;
+   padding: 10px;
+   /* https: //active-vision.ru/icon/box-shadow/ */
+}
+
+
+/* https: //cssgradient.io/ */
+
+.block1 {
+   position: absolute;
+   top: 55%;
+   left: 25%;
+   z-index: 1;
+   background: rgb(2, 0, 36);
+   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.block2 {
+   position: absolute;
+   top: 50%;
+   left: 35%;
+   z-index: 2;
+   background: rgb(34, 193, 195);
+   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+
+.block3 {
+   position: absolute;
+   top: 45%;
+   left: 45%;
+	/* возникает вопрос а как по центру его установитть?  */
+   z-index: 999;
+   text-align: center;
+   background: rgb(63, 94, 251);
+   background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.block4 {
+   position: absolute;
+   top: 50%;
+   left: 55%;
+   z-index: 2;
+   text-align: right;
+   background: rgb(131, 58, 180);
+   background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.block5 {
+   position: absolute;
+   top: 55%;
+   left: 65%;
+   z-index: 1;
+   text-align: right;
+   background: rgb(238, 174, 202);
+   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
